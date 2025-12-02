@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <class="row">
+            <h1 class="m-4">O que é preciso para se fazer um programa de computador?</h1>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title"><h2>O que vamos precisar?</h2></div>
+                    </div>
+                    <div class="card-body">
+                        <ol>
+                            <li>Uma <strong>linguagem de programação:</strong> regras <strong>léxicas</strong> e <strong>sintáticas</strong> para se escrever o programa;</li>
+                            <li>Uma <strong>IDE:</strong> software para editar e testar o programa;</li>
+                            <li>Um <strong>compilador</strong>: software para transformar o <strong>código fonte</strong> em <strong>código objeto</strong>;</li>
+                            <li>Um <strong>gerador de código</strong> ou <strong>máquina virtual:</strong> software que permite que o programa seja executado;</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <div class="card-title"><h2>Linguagem de programação, léxica, sintática</h2></div>
+                    </div>
+                    <div class="card-body">
+                        <br>
+                        <h4>Vamos precisar de...</h4>
+                        <p><strong>Exemplo</strong>:</p>
+                        <p><strong>Problema</strong>: Lavar roupa suja:</p>
+                        <ol>
+                            <li>Uma <strong>linguagem de programação:</strong> regras <strong>léxicas</strong> e <strong>sintáticas</strong> para se escrever o programa;</li>
+                            <li>Uma <strong>IDE:</strong> software para editar e testar o programa;</li>
+                            <li>Um <strong>compilador</strong>: software para transformar o <strong>código fonte</strong> em <strong>código objeto</strong>;</li>
+                            <li>Um <strong>gerador de código</strong> ou <strong>máquina virtual:</strong> software que permite que o programa seja executado;</li>
+                        </ol>
+
+                        <h4>Linguagem de Programação:</h4>
+                        <ul>
+                            <li>É um conjunto de regras léxicas (ortografia) e sintáticas (gramática) para se escrever programas.</li>
+                        </ul>
+
+                        <h4>Léxica:</h4>
+                        <ul>
+                            <li>Diz respeito à correção das palavras "isoladas" (ortografia).</li>
+                        </ul>
+                        <h6>Exemplo (Português): . . . . . . . . . . Linguagem de programação:</h5>
+                        <p>cachorro é diferente de caxorro;.....       main é diferente de maim</p>
+
+                        <h4>Sintática:</h4>
+                        <ul>
+                            <li>Diz respeito à correção das sentenças (gramática).</li>
+                        </ul>
+                        <h6>Exemplo (Português): . . . . . . . . . . Linguagem de programação:</h5>
+                        <p>cachorro está com fome;..................  x = 2 + y;</p>
+                        <p>A cachorro está com fome;................  x = + 2 y</p>
+
+                        <h4>Linguagem de programação:</h4>
+                        <h6>Exemplo de linguagem de programação:</h5>
+                        <p>C, Pascal, C++, Java, C#, Python, Ruby, PHP, JavaScript, etc.</p>
+                        <h6>Exemplo de programas</h6>
+                        <p>Suponha um programa que solicita do usuário dois números e depois mostra a média aritmética deles:</p>
+                        <h6>SOLUÇÃO EM C:</h6>
+                        <pre>
+                            #include <stdio.h>
+                            int main() {
+                                double x, y, media;
+
+                                printf("Digite o primeiro número: ");
+                                scanf("%f", &x);
+                                printf("Digite o segundo número: ");
+                                scanf("%f", &y);
+                                media = (x + y) / 2;
+                                printf("A média é: %.2f\n", media);
+                                return 0;
+                            }
+                        </pre>
+
+                        <h6>SOLUÇÃO EM C++:</h6>
+                        <pre>
+                            #include <iostream>
+                            using namespace std;
+                            int main() {
+                                double x, y, media;
+
+                                cout <<"Digite o primeiro número: ";
+                                cin >> x;
+                                cout <<"Digite o segundo número: ";
+                                cin >> y;
+                                media = (x + y) / 2;
+                                cout <<"A média = ", << media << endl;
+                                return 0;
+                            }
+                        </pre>
+
+                        <h6>SOLUÇÃO EM C#:</h6>
+                        <pre>
+                            using System;
+                            namespace programa{
+                                class Program{
+                                    static void Main(String[] args){
+                                        double x, y, media;
+
+                                        Console.Write("Digite o primeiro número: )";
+                                        x = double.Parse(Console.ReadLine());
+                                        Console.Write("Digite o segundo número: )";
+                                        y = double.Parse(Console.ReadLine());
+                                        
+                                        media = (x + y) / 2;
+                                        Console.WriteLine("A média = " + media;
+                                    }
+                                }
+                            }
+                            
+                        </pre>
+
+                        <h6>SOLUÇÃO EM Linguagem Java:</h6>
+                        <pre>
+                            import java.util.Scanner;
+                            public class Main{
+                                public static void Main(String[] args){
+                                    double x, y, media;
+
+                                    System.out.print("Digite o primeiro número: )";
+                                    x = sc.nextDouble();
+                                    Console.Write("Digite o segundo número: )";
+                                    y = sc.nextDouble();
+                                    
+                                    media = (x + y) / 2;
+                                    System.out.println("A média = " + media);
+                                    sc.close();
+                                }
+                            }
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <div class="card-title"><h2>Resumo da aula</h2></div>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Linguagem: </strong>  conjunto de regras léxicas e sintáticas para se escrever um programa</li>
+                            <ul>
+                                <li><strong>Léxica: </strong>ortografia. Palavras isoladas.</li>
+                                <li><strong>Sintática: </strong>gramática. Sentença como um todo.</li>
+                            </ul>
+                            <li><strong>Exemplos de linguagem: </strong>C, Pascal, C++, Java, C#, Python, Ruby, PHP, JavaScript, etc.</li>
+                            <li>Exemplos de códigos feitos em C, C++, Java, C#.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
